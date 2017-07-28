@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MetaCoder</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="logo"><span id="bold">Meta</span>Coder</div>
+
+        <div id="headerButtons">
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton active" id="css">CSS</div>
+            <div class="toggleButton active" id="js">JavaScript</div>
+            <div class="toggleButton active" id="preview">Preview</div>
+        </div>
+    </div>
+    <div id="codeContainer">
+
+        <div class="codePanel" id="htmlPanel">
+            <textarea id="htmlPanelCode" placeholder="Enter HTML Here" ><h1>
+  Hello World!
+</h1>
+<h1 id="blank"></h1></textarea>
+        </div>
+
+        <div class="codePanel" id="cssPanel">
+            <textarea id="cssPanelCode" placeholder="Enter CSS Here">body {
+  background-color: lightBlue;
+}</textarea>
+        </div>
+
+        <div class="codePanel" id="jsPanel">
+            <textarea id="jsPanelCode" placeholder="Enter JavaScript Here">document.getElementById("blank"). innerHTML = "It Worked!"; </textarea>
+        </div>
+
+        <iframe class="codePanel" id="previewPanel"></iframe>
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
